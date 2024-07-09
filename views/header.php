@@ -1,6 +1,3 @@
-<?php
-$count = countcart();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
