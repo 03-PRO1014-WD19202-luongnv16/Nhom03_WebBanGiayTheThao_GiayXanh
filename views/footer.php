@@ -36,21 +36,7 @@
     //       $('#select-filter option[value="'+active+'"]').attr('selected','selected');
     //     })
         
-       function changeFilter() {
-          // alert("HHHHHHH")
-          
-          var value = document.querySelector('#select-filter').value;
-          
-          //alert(value);
-          if(value!=0){
-            var url = "http://localhost/du_an_1/index.php?act=" + value;
-            // alert(url);
-            window.location.href =  url; 
-          }else{
-            alert('Hãy lọc sản phẩm');
-          }
-        }
-
+       
 
     </script>
 
