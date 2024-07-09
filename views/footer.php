@@ -3,7 +3,7 @@
                     <div class="row align-items-start">
                       <div class="col chinhsach">
                         <h4>Hỗ Trợ Khách Hàng</h4>
-                        <p style="background-color: rgb(243, 243, 243);">Email: duan1shn@fpt.edu.vn</p>
+                        <p style="background-color: rgb(243, 243, 243);">Email: duan1nhom3@fpt.edu.vn</p>
                         <p style="background-color: rgb(243, 243, 243);"> Hotline: 0123456789</p>
                         <p style="background-color: rgb(243, 243, 243);">Địa chỉ: Cổng số 1, Tòa nhà FPT Polytechnic, <br>
                         13 phố Trịnh Văn Bô, phường Phương Canh,<br> quận Nam Từ Liêm, TP Hà Nội</p>
