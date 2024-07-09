@@ -3,7 +3,7 @@
                     <div class="row align-items-start">
                       <div class="col chinhsach">
                         <h4>Hỗ Trợ Khách Hàng</h4>
-                        <p style="background-color: rgb(243, 243, 243);">Email: duan1nhom3@fpt.edu.vn</p>
+                        <p style="background-color: rgb(243, 243, 243);">Email: duan1shn@fpt.edu.vn</p>
                         <p style="background-color: rgb(243, 243, 243);"> Hotline: 0123456789</p>
                         <p style="background-color: rgb(243, 243, 243);">Địa chỉ: Cổng số 1, Tòa nhà FPT Polytechnic, <br>
                         13 phố Trịnh Văn Bô, phường Phương Canh,<br> quận Nam Từ Liêm, TP Hà Nội</p>
@@ -36,7 +36,21 @@
     //       $('#select-filter option[value="'+active+'"]').attr('selected','selected');
     //     })
         
-       
+       function changeFilter() {
+          // alert("HHHHHHH")
+          
+          var value = document.querySelector('#select-filter').value;
+          
+          //alert(value);
+          if(value!=0){
+            var url = "http://localhost/du_an_1/index.php?act=" + value;
+            // alert(url);
+            window.location.href =  url; 
+          }else{
+            alert('Hãy lọc sản phẩm');
+          }
+        }
+
 
     </script>
 
