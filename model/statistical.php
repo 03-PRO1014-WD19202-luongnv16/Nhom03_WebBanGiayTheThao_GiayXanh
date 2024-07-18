@@ -11,6 +11,27 @@ function Most_purchased_products(){
                 ORDER BY SUM(od.soluong) DESC;";
         return pdo_query($sql);
 }
+function doanh_thu_7_ngay_qua(){
+        $sql = "SELECT SUM(tong_donhang) AS 'doanhthu' FROM `order` 
+                        WHERE create_at >= DATE_SUB(NOW(), INTERVAL 7 DAY) AND id_status = 3";
+         return pdo_query_value($sql);
+}
+function doanh_thu_1_ngay(){
+        $sql = "SELECT sum(tong_donhang) as 'DoanhThuToday' FROM `order` WHERE create_at = CURDATE() and id_status =3";
+        return pdo_query_value($sql);
+}
+function doanh_thu_1_thang(){
+        $sql = "SELECT SUM(tong_donhang) AS doanhthu 
+                        FROM `order` 
+                        WHERE (MONTH(create_at) = MONTH(CURDATE()) AND YEAR(create_at) = YEAR(CURDATE())) AND id_status = 3";
+        return pdo_query_value($sql);
+}
+function doanh_thu_1_nam(){
+        $sql = "SELECT SUM(tong_donhang) AS doanhthu 
+                        FROM `order` 
+                        WHERE YEAR(create_at) = YEAR(CURDATE()) AND id_status = 3";
+        return pdo_query_value($sql);
+}
 function total_order(){
         $sql = "SELECT COUNT(id) as tongDon
                 FROM `order` ";

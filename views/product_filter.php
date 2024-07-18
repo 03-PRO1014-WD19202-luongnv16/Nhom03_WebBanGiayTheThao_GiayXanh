@@ -23,16 +23,16 @@
            </div>
 
            <!-- ============================================================= BOXLEFT============================================================= -->
-           <?php include "boxleft.php";?>
+
             
                 <!-- ============================================================== BOXRIGHT ================================================================ -->
-                <div class="boxright">
+
 
                   <!-- =================================== LỰA CHỌN ===================================== -->
-                  <?php include "chon.php"?>
+                  <div class="pb-5"><?php include "chon.php"?></div>
 
                     <!-- ====================================== SẢN PHẨM ======================================= -->
-                    <div class="row row-cols-1 row-cols-md-3 g-4 sanpham">
+                    <div class="row sanpham">
 
                         <?php
                           foreach ($list_product as $sp) {
@@ -41,7 +41,7 @@
                             $hinh = $GLOBALS['path_img'].$image;
                             $sale_price=$price - ( $price *  $sale )/100;
                             $price_sale =number_format(( $price - ( $price *  $sale )/100));
-                            echo '<div class="col name">
+                            echo '<div class="col-3 name">
                                       <a href="'.$link_product.'">
                                         <div class="card h-100 item">
                                           <img src="'.$hinh.'" class="card-img-top" alt="...">

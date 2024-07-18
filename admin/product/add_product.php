@@ -23,16 +23,17 @@
                     <input type="file" class="form-control" name='image'>
                     <p class="text-danger"> <?= isset($error['image'])? $error['image'] :'' ?></p>
                 </div>
-                <!-- <div class="col-4">
-                    <label  class="form-label fw-bolder" >Lượt xem</label>
-                    <input type="number" class="form-control" name='view' value="... !empty($_POST['view']) ? $_POST['view'] : false ?>">
-                    <p class="text-danger"> ... isset($error['view'])? $error['view'] :'' ?></p>
-                </div> -->
-                <!-- <div class="col-4">
+                
+                <div class="col-4">
+                    <label  class="form-label fw-bolder" >Size</label>
+                    <input type="number" class="form-control" name='view' value="<?= !empty($_POST['view']) ? $_POST['view'] : false ?>">
+                    <p class="text-danger"> <?= isset($error['view'])? $error['view'] :'' ?></p>
+                </div>
+                <div class="col-4">
                     <label  class="form-label fw-bolder" >Giảm giá</label>
-                    <input type="number" class="form-control" name='sale' value="... !empty($_POST['sale']) ? $_POST['sale'] : false ?>">
-                    <p class="text-danger"> .... isset($error['sale'])? $error['sale'] :'' ?></p>
-                </div> -->
+                    <input type="number" class="form-control" name='sale' value="<?= !empty($_POST['sale']) ? $_POST['sale'] : false ?>">
+                    <p class="text-danger"> <?= isset($error['sale'])? $error['sale'] :'' ?></p>
+                </div>
                 <div class="col-4">
                     <label  class="form-label fw-bolder" >Số lượng</label>
                     <input type="number" class="form-control" name='quantity' value="<?= !empty($_POST['quantity']) ? $_POST['quantity'] : false ?>" >

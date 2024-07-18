@@ -33,6 +33,18 @@
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="index.php?act=list_user">Khách hàng</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="index.php?act=list_comment">Bình luận</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="index.php?act=list_bill">Đơn hàng</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-light" href="index.php?act=list_property">Thuộc tính</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="index.php?act=best_selling_brand">Thống kê</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

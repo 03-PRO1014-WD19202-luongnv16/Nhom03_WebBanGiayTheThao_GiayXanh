@@ -23,6 +23,8 @@
         
         include "header.php";
         include "../global.php";
+        $doanh_thu_ngay = doanh_thu_1_ngay();
+        $doanh_thu_tuan = doanh_thu_7_ngay_qua();
         if(isset($_GET['act'])){
             $act = $_GET['act'];
             switch($act){

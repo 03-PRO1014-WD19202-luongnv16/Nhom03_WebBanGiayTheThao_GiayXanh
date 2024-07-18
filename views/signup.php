@@ -52,7 +52,6 @@
                 <div class="form-group">
                     <input type="submit" name="signup" class="form-control btn btn-primary mb-3" value="Đăng ký">
                 </div>
-            
             </form>
         </div>
     </div>

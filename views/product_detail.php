@@ -34,28 +34,26 @@
                                 <img src="./image/anh1.jpg" alt="" width="100">
                             </p> -->
                         </div>
-                        <div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3">
+                            <h2 class="product-title">   <?=$name ?></h2>
+                            <p>Size: <?= $view ?> </small></p>
+                            <p>Thương hiệu: <?= $brand_name ?> </small></p>
+                            <h3><strong style="size: 50; color: red;"><?= $price_new = number_format(( $price - ( $price *  $sale )/100)) ?> đ</strong> <small class="text-muted mx-5" >Giá cũ: <s><span class="opacity-50"><?=$price = number_format($price) ?>đ</span></s></small></h3>
+                            <br>
                             <h4>Mô tả sản phẩm :</h4>
                             <p>
                                 <?= $description?>
                                 
                             </p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="p-3">
-                            <h2 class="product-title"><?=$name ?></h2>
-                            <p>Thương hiệu: <?= $brand_name ?> </small></p>
-                            
-                            <h3><strong style="size: 50; color: red;"><?= $price_new = number_format(( $price - ( $price *  $sale )/100)) ?> đ</strong> <small class="text-muted mx-5" >Giá cũ: <s><span class="opacity-50"><?=$price = number_format($price) ?>đ</span></s></small></h3>
-                                
-                            <br>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <label class="col-2" for="soluong">Size:</label>
                                 <?php foreach($sizes as $size) :?>
                                     <input  type="button" class="btn btn-light col-2" name="size" value="<?= $size['size_number'] ?>">
                                 <?php endforeach ?>
-                            </div>
+                            </div> -->
                             <br>
                             <form action="index.php?act=addtocart" method="post">
                                 <div class="form-group"> 
