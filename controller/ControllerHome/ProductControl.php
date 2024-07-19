@@ -107,7 +107,7 @@ function thanh_toan(){
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $pttt=$_POST['pttt'];
-        $ma_donhang="SHN".rand(0,999999);
+        $ma_donhang="DHL".rand(0,999999);
         $status_id = 1;
         $date = date('Y-m-d');
         //Tạo đơn hàng và trả về đơn hàng;
